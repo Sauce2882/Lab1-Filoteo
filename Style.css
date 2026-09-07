@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -6,34 +8,37 @@
 }
 
 body {
-    background-color: #f1f5f9;
-    color: #1e293b;
-    line-height: 1.6;
+    background: #0b132b; /* Dark Midnight Blue Background */
+    color: #ffffff;
+    min-height: 100vh;
+    padding-bottom: 50px;
 }
 
-/* Dark Blue Wave Header */
+/* Dynamic Header Banner */
 .header-banner {
     position: relative;
-    background: linear-gradient(135deg, #0f172a, #1e3a8a, #3b82f6);
-    color: #ffffff;
-    padding: 60px 20px 100px;
+    background: linear-gradient(135deg, #1c2541 0%, #00509d 50%, #00296b 100%);
+    padding: 80px 20px 120px;
     text-align: center;
+    border-bottom: 4px solid #00b4d8;
 }
 
 .header-content h1 {
-    font-size: 2.2rem;
-    font-weight: 700;
-    margin-bottom: 8px;
-    text-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: #ffffff;
+    text-shadow: 0 4px 15px rgba(0, 180, 216, 0.5);
+    letter-spacing: 1px;
 }
 
 .header-content p {
-    font-size: 1.1rem;
-    color: #93c5fd;
-    font-weight: 300;
+    font-size: 1.2rem;
+    color: #90e0ef;
+    margin-top: 10px;
+    font-weight: 600;
 }
 
-/* Wave Styling */
+/* SVG Wave Style */
 .wave {
     position: absolute;
     bottom: 0;
@@ -46,106 +51,109 @@ body {
 .wave svg {
     position: relative;
     display: block;
-    width: calc(130% + 1.3px);
-    height: 60px;
+    width: calc(150% + 1.3px);
+    height: 70px;
 }
 
-/* Main Container */
+/* Container Wrapper */
 .container {
-    max-width: 800px;
-    margin: -40px auto 40px;
+    max-width: 850px;
+    margin: -50px auto 0;
     padding: 0 20px;
     position: relative;
     z-index: 10;
 }
 
-/* Modern Card Layout */
+/* Glowing Neon Glass Cards */
 .card {
-    background: #ffffff;
-    border-radius: 16px;
-    padding: 30px;
-    margin-bottom: 24px;
-    box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.05), 0 8px 10px -6px rgba(0, 0, 0, 0.01);
-    border: 1px solid #e2e8f0;
-    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    background: #1c2541;
+    border-radius: 20px;
+    padding: 35px;
+    margin-bottom: 30px;
+    border: 2px solid #3a506b;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    transition: all 0.3s ease-in-out;
 }
 
 .card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 20px 25px -5px rgba(30, 58, 138, 0.1);
-    border-color: #93c5fd;
+    transform: translateY(-8px) scale(1.01);
+    border-color: #00b4d8;
+    box-shadow: 0 15px 35px rgba(0, 180, 216, 0.3);
 }
 
 h2 {
-    color: #1e3a8a;
-    font-size: 1.4rem;
-    font-weight: 600;
-    margin-bottom: 16px;
-    border-left: 4px solid #3b82f6;
-    padding-left: 12px;
+    color: #00b4d8;
+    font-size: 1.6rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
 }
 
-/* Hobby List Items */
+/* Hobbies List Cards */
 .hobby-list {
     list-style: none;
     display: flex;
     flex-direction: column;
-    gap: 12px;
+    gap: 15px;
 }
 
 .hobby-list li {
     display: flex;
     align-items: center;
-    gap: 16px;
-    background-color: #f8fafc;
-    padding: 14px 18px;
-    border-radius: 12px;
-    border: 1px solid #f1f5f9;
+    gap: 20px;
+    background: #0b132b;
+    padding: 18px 24px;
+    border-radius: 15px;
+    border: 1px solid #3a506b;
 }
 
 .hobby-list .icon {
-    font-size: 1.8rem;
-    background: #e0f2fe;
-    padding: 10px;
-    border-radius: 10px;
+    font-size: 2.2rem;
+    background: #1c2541;
+    padding: 12px;
+    border-radius: 50%;
+    border: 2px solid #00b4d8;
 }
 
 .hobby-list strong {
-    color: #1e293b;
-    font-size: 1rem;
+    color: #ffb703; /* Accent Gold */
+    font-size: 1.1rem;
+    display: block;
 }
 
 .hobby-list p {
-    font-size: 0.9rem;
-    color: #64748b;
+    color: #c0c0c0;
+    font-size: 0.95rem;
 }
 
-/* Button with Wave Glow */
+/* Bright Animated Button */
 .interactive-section {
     text-align: center;
 }
 
 button {
-    background: linear-gradient(135deg, #2563eb, #1d4ed8);
-    color: #ffffff;
+    background: linear-gradient(45deg, #ffb703, #fb8500);
+    color: #000000;
     border: none;
-    padding: 14px 32px;
-    font-size: 1rem;
-    font-weight: 600;
+    padding: 16px 40px;
+    font-size: 1.1rem;
+    font-weight: 800;
     border-radius: 50px;
     cursor: pointer;
-    box-shadow: 0 4px 14px rgba(37, 99, 235, 0.4);
+    box-shadow: 0 0 20px rgba(255, 183, 3, 0.4);
     transition: all 0.3s ease;
+    text-transform: uppercase;
 }
 
 button:hover {
-    background: linear-gradient(135deg, #1d4ed8, #1e40af);
-    transform: scale(1.04);
-    box-shadow: 0 6px 20px rgba(37, 99, 235, 0.6);
+    transform: scale(1.08);
+    box-shadow: 0 0 30px rgba(255, 183, 3, 0.8);
 }
 
 #greetingMsg {
-    margin-top: 16px;
-    font-weight: 600;
-    color: #2563eb;
+    margin-top: 20px;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #00b4d8;
 }
